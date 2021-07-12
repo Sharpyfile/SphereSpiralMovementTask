@@ -5908,7 +5908,7 @@ MonoBehaviour:
   seconds: 5
   panel: {fileID: 1143589061}
   distanceText: {fileID: 131159942}
-  message: 'Pokonany dystans:'
+  message: 'Current distance:'
   maxTime: 2.5
   perticles: {fileID: 626729737}
 --- !u!23 &1239667643

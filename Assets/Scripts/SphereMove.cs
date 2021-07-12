@@ -85,8 +85,8 @@ public class SphereMove : MonoBehaviour
             // If pause, set UI elements active, update them and wait for X seconds, then reset speed
             if (stopMove)
             {
-                panel.SetActive(true);
                 distanceText.text = message + " " + distance.ToString();
+                panel.SetActive(true);                
                 yield return new WaitForSeconds(seconds);
                 stopMove = false;
                 panel.SetActive(false);
@@ -108,6 +108,8 @@ public class SphereMove : MonoBehaviour
 
         // Play particles and end coroutine
         perticles.Play();
+        distanceText.text = message + " " + distance.ToString();
+        panel.SetActive(true);
         yield break;
     }
 }
